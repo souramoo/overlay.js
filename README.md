@@ -18,7 +18,7 @@ Hello
 <script>
 // do stuff
 setTimeout(function(){
-  overlayHide()
+  overlayHide() // on load, the overlay will show. so hide it after five seconds.
 }, 5000)
 </script>
 </body>
@@ -30,9 +30,9 @@ And your page will be loading!
 
 ## Functions
 
-`overlayShow(tag="")` show the overlay. Optionally, set a tag to be able to pop it off later.
+`overlayShow()` show the overlay. Optionally, set a tag to be able to pop it off later (for readability and to debug which callbacks never return if you get stuck on the overlay).
 
-`overlayHide(tag=""` hide the overlay. Optionally, pop a tag from the stack.
+`overlayHide()` hide the overlay. Optionally, pop a tag from the stack.
 
 The overlay will hide once ALL the tags in the stack have been popped. So you can fire off overlayShow for each asynchronous data load and overlayHide for each callback and the overlay will only go away once all the data calls have finished!
 
