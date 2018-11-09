@@ -8,6 +8,9 @@ Overlay.js is for you!
 ## Dependancies
 None
 
+## Try it now!
+https://jsfiddle.net/souramoo/3tk5vyw9/
+
 ## Usage
 
 ```
